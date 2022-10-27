@@ -3,8 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Header from "./components/Header";
-import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
+import {Box, createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const baseTheme = createTheme({
   palette: {
@@ -35,8 +36,9 @@ function App() {
         <Header></Header>
         <NavBar></NavBar>
         <Routes>
-          <Route path={"/"} element={<div/>}></Route>
+          <Route path={"/"} element={<Box sx={{width: "100vh", height: "70vh"}}><div/> </Box>}></Route>
         </Routes>
+        <Footer></Footer>
       </ThemeProvider>
     </BrowserRouter>
   );
