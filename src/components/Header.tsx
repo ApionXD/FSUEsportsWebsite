@@ -13,7 +13,7 @@ export default function Header() {
             backgroundColor: theme.palette.primary.main,
         }}>
             <Avatar src={"/logo192.png"} alt={"Esports Logo"} sx={{marginX: "2%"}}></Avatar>
-            <h2>Esports at FSU</h2>
+            <h2 style={{color: "white"}}>Esports at FSU</h2>
             <Avatar src={"/logo192.png"} alt={"Esports Logo"} sx={{marginX: "2%"}}></Avatar>
         </Box>
     )
