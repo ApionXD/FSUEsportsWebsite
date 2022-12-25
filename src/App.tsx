@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import {Box, createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import MainPage from "./components/MainPage";
 
 const baseTheme = createTheme({
   palette: {
@@ -36,7 +37,7 @@ function App() {
         <Header></Header>
         <NavBar></NavBar>
         <Routes>
-          <Route path={"/"} element={<Box sx={{width: "100vh", height: "70vh"}}><div/> </Box>}></Route>
+          <Route path={"/"} element={<MainPage/>}></Route>
         </Routes>
         <Footer></Footer>
       </ThemeProvider>
